@@ -70,15 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4D99A9915DE141B00EB5615 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -372,7 +363,6 @@
 				E4E96D80158E10FD002E6E0A /* Frameworks */,
 				E4E96D81158E10FD002E6E0A /* Headers */,
 				E4E96D82158E10FD002E6E0A /* Resources */,
-				E4D99A9915DE141B00EB5615 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -409,13 +399,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = E4E96D7D158E10FD002E6E0A /* Build configuration list for PBXProject "NMSSH" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = E4E96D78158E10FD002E6E0A;
@@ -581,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -595,6 +587,7 @@
 					"$(SRCROOT)/NMSSH-OSX/Libraries/lib",
 					"$(PROJECT_DIR)/NMSSH-OSX/Libraries/lib",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "se.ninemuses.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
@@ -605,6 +598,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -619,6 +613,7 @@
 					"$(SRCROOT)/NMSSH-OSX/Libraries/lib",
 					"$(PROJECT_DIR)/NMSSH-OSX/Libraries/lib",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "se.ninemuses.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
